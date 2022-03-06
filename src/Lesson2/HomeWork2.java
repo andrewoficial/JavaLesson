@@ -126,5 +126,66 @@ public class HomeWork2 {
             System.out.println ("Вы подходите на должность разработчика");
         }
 
+
+
+        int month = (int) (Math.random() * 10);
+        System.out.print ("Был задан: ");
+        switch (month){
+            case 1:
+                System.out.println ("Январь - Зима");
+                break;
+            case 2:
+                System.out.println ("Февраль - Зима");
+                break;
+            case 3:
+                System.out.println ("Март - Весна");
+                break;
+            case 4:
+                System.out.println ("Апрель - Весна");
+                break;
+            case 5:
+                System.out.println ("Май - Весна");
+                break;
+            case 6:
+                System.out.println ("Июнь - Лето");
+                break;
+            case 7:
+                System.out.println ("Июль - Лето");
+                break;
+            case 8:
+                System.out.println ("Август - Лето");
+                break;
+            case 9:
+                System.out.println ("Сентябрь - Осень");
+                break;
+            case 10:
+                System.out.println ("Октябрь - Осень");
+                break;
+            case 11:
+                System.out.println ("Ноябрь - Осень");
+                break;
+            case 12:
+                System.out.println ("Декабрь - Зима");
+                break;
+            default:
+                System.out.println ("Ошибка");
+                break;
+        }
+
+        if(month > 12){
+            System.out.println ("Ошибка");
+        }else if(month > 11){
+            System.out.println ("Зима");
+        }else if(month > 8){
+            System.out.println ("Осень");
+        }else if(month > 5){
+            System.out.println ("Лето");
+        }else if(month > 2){
+            System.out.println ("Весна");
+        }else if(month > 0){
+            System.out.println ("Зима");
+        }else{
+            System.out.println ("Ошибка");
+        }
     }
 }
