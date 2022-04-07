@@ -2,6 +2,7 @@ package ru.itmo.lessons.lesson6;
 
 import ru.itmo.lessons.lesson6.books.Author;
 import ru.itmo.lessons.lesson6.books.Book;
+import ru.itmo.lessons.lesson6.books.Shelf;
 
 public class Aplication {
     public static void main(String[] args) {
@@ -17,5 +18,8 @@ public class Aplication {
         book1.setTitle("Book One");
         System.out.println(book1.getTitle());
 
+        Shelf shelf = new Shelf();
+        shelf.addBook(book1);
+        shelf.addBook(book1, book1, book1);
     }
 }
